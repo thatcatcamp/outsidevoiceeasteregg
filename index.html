@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<!-- Created with ❤ by Kiryu | https://www.kiryu.it | mail@kiryu.it !-->
+<head>
+  <meta charset="UTF-8">
+  <title>Jigoku Tsūshin | Hotline to Hell</title>
+  <meta property="og:site_name" content="Jigoku Tsūshin | Hotline to Hell">
+  <meta property="og:description" content="We will take revenge on your behalf. Jigoku Tsushin | Hotline to Hell | Jigoku Shoujo"/>
+  <meta property="og:url" content="https://www.jigokutsushin.it">
+  <meta property="og:image" content="https://www.jigokutsushin.it/images/preview_1.png">
+  <meta name="author" content="Kiryu">
+  <meta name="keywords" content="jigoku tsushin, jigokutsushin, hotline to hell,m jigoku tsuushin, jigoku tsūshin, jigoku tsushin real website, jigoku tsushin website, jigoku tsushin anime, jigoku tsushin site, jigoku tsushin net, jigoku shoujo website, jigoku tsuushin website, jigoku shoujo">
+  <meta name="description" content="We will take revenge on your behalf. Jigoku Tsushin | Hotline to Hell | Jigoku Shoujo">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css%3Fv=1.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+   <script src="jquery.min.js"></script>
+   <script>
+       function validateEmail(email) {
+           const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+           return re.test(String(email).toLowerCase());
+       }
+
+       // Listen for changes in the email input field
+       document.getElementById('email').addEventListener('input', function (event) {
+           // If the new value is a valid email, enable the button. Otherwise, disable it.
+           document.getElementById('submit').disabled = !validateEmail(event.target.value);
+       });
+
+// Example usage:
+
+</script>
+</head>
+
+<body>
+
+  <script>
+$(function() {
+setTimeout(function() { $("#flame").fadeOut(2500); }, 4000)
+    //setTimeout( function() { flickerText('flicker-text'); }, 5000); // Apply the effect to an element with the ID "flicker-text")
+
+})
+  </script>
+  <div id="flame"><iframe src="flame.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
+    Your browser doesn't support iframes
+</iframe></div>
+
+<div id="container">
+  <center>
+  <div style="color:white; font-size: xx-large" id="flicker-text">
+      Enter your email and Clippy will answer.<br>Clippy has the answers.<br>Clippy havas la respondojn.<br>Clippy tiene las respuestas.
+  </div>
+  </center>
+    <p></p>
+  <audio id="sound1" src="audio/button.mp3" preload="auto"></audio>
+  <form action="takethis.html" method="post">
+    <input id="text" type="text" name="name" size ="30" /><br /></br>
+  </form>
+<button type="submit" onclick="javascript:delay('takethis.html'); document.getElementById('sound1').play();">クリッピーを受け入れる</button>
+   <script>
+  function delay (URL) {
+    setTimeout( function() { window.location = URL }, 1600 );
+}
+
+  document.getElementById('emailForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const email = document.getElementById('email').value;
+      fetch('http://localhost:5000/submit', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: `email=${encodeURIComponent(email)}`,
+      });
+  });
+
+</script>
+
+
+<iframe src="audio/jigoku.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+</div>
+</body>
+</html>

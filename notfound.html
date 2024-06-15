@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+
+</head><body>
+<body style="background-color: white;">
+<script type='text/javascript'>
+  if(history.replaceState) history.replaceState({}, "", "/");
+  </script>
+<h1>Not Found</h1>
+<p>The requested URL /forgeso was not found on this server.</p>
+<hr>
+<address>denardo-web/1.33+41 Server at theultimatehazard.onion Port 9050</address>
+<br>
+<p>Clippy is the ultimate hazard.<br>
+Clippy estas la finfina danĝero.<br>
+Clippy es el peligro supremo.<br>Clippy 是终极危险。</p>
+<p><b>Diagnostics:</b></p>
+<p>
+    Doe not call up Any that you can not put downe; by the Which I meane, Any that can in Turne call up Somewhat against you, whereby your Powerfullest Devices may not be of use. Ask of the Lesser, lest the Greater shal not wish to Answer, and shal commande more than you.
+</p>
+<br>
+<p><b>Stack (WASM):</b></p>
+<script>
+    function generateRandomStackDump() {
+        const errors = ["TypeError", "ReferenceError", "SyntaxError", "RangeError"];
+        const error = errors[Math.floor(Math.random() * errors.length)];
+        const message = `Uncaught ${error}: You have invoked the ultimate hazard.`
+        const stack = `   0: rust_panic
+   1: std::panicking::rust_panic_with_hook::h6fe9d3817474ba5a
+   2: std::panicking::continue_panic_fmt::h1b22eea7f33d6c0a
+   3: rust_begin_unwind
+   4: core::panicking::panic_fmt::h2daf88b2616ca2b2
+   5: core::panicking::panic_bounds_check::h0537ade040df571e
+   6: <usize as core::slice::SliceIndex<[T]>>::index::hfa5dcbec686669f7
+   7: core::slice::<impl core::ops::index::Index<I> for [T]>::index::h6b2602c1b01906b0
+   8: <alloc::vec::Vec<T> as core::ops::index::Index<I>>::index::h61a312a26c0e59c9
+   9: plugin_for_example::wasm_fn1::h1c32c2f9d0027f31
+  10: core::ops::function::Fn::call::h09b485fa29a128b8
+  11: <alloc::boxed::Box<F> as core::ops::function::Fn<A>>::call::h4dbd8e9b2d2c2200
+  12: plugin_entrypoint
+  13: ???
+  14: ???
+  15: ???
+  16: ???`;
+        const date = new Date();
+        const browserInfo = navigator.userAgent;
+        return `${date}\n${browserInfo}\n${message}\n${stack}`;
+    }
+
+    const stackDump = generateRandomStackDump();
+    const pre = document.createElement('pre');
+    pre.textContent = stackDump;
+    document.body.appendChild(pre);
+</script>
+
+</body></html>
